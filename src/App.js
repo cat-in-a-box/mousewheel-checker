@@ -1,24 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+// Установил и импортировал Helmet, с помощью которого изменил page title.
+// Насколько я понял, это самый простой способ менять его (как и атрибуты страницы) на реакте.
+// А еще подгружает скрипты. Нормально.
+// Поставил еще React-Scrollable-Anchor для красивых якорей и плавного перемещения
+import { Helmet } from "react-helmet";
+import Header from './components/Header.jsx';
+import Footer from "./components/Footer.jsx";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Helmet>
+        <title>mousewheel_checker</title>
+        <meta charSet="utf-8" />
+      </Helmet>
+      <Header/>
+      <Footer/>
     </div>
   );
 }
