@@ -6,7 +6,8 @@ import "./App.css";
 // Поставил еще React-Scrollable-Anchor для красивых якорей и плавного перемещения
 import { Helmet } from "react-helmet";
 import Header from './components/Header.jsx';
-import Footer from "./components/Footer.jsx";
+import WheelCheckArea from "./components/WheelCheckArea.jsx";
+import WheelCheckRotation from "./components/WheelCheckRotation.jsx";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
         <meta charSet="utf-8" />
       </Helmet>
       <Header/>
-      <Footer/>
+      <WheelCheckArea/>
+      <WheelCheckRotation/>
     </div>
   );
 }
