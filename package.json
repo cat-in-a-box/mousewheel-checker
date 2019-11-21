@@ -33,5 +33,13 @@
   },
   "devDependencies": {
     "gh-pages": "^2.1.1"
+  },
+  "guppy": {
+    "id": "41590160-0b76-11ea-9232-155000059c75",
+    "name": "mousewheel_checker",
+    "type": "create-react-app",
+    "color": "#C51162",
+    "icon": null,
+    "createdAt": 1574241311863
   }
 }
