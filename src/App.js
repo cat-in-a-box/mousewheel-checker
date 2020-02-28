@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <Helmet>
         <title>mousewheel_checker</title>
-        <meta charSet="utf-8" />
+        <meta charSet="utf-8"/>
       </Helmet>
       <Header/>
       <WheelCheckArea/>

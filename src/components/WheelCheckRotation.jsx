@@ -10,17 +10,19 @@ export default class WheelCheckRotation extends React.Component {
 
         mouseArea.addEventListener ('wheel', function (a) {
             if (a.deltaY > 0) {
-                document.getElementById('WheelDown').classList.add('active');
+                document.getElementById('Wheel').classList.add('Down');
                 window.clearTimeout(mouseDownCooldown);
                 mouseDownCooldown = window.setTimeout(function () {
-                    document.getElementById('WheelDown').classList.remove('active')
-                }, 175);
-            } else if (a.deltaY < 0) {
-                document.getElementById('WheelUp').classList.add('active');
+                    document.getElementById('Wheel').classList.remove('Down')
+                }, 400);
+            }
+
+            else if (a.deltaY < 0) {
+                document.getElementById('Wheel').classList.add('Up');
                 window.clearTimeout(mouseUpCooldown);
                 mouseUpCooldown = window.setTimeout(function () {
-                    document.getElementById('WheelUp').classList.remove('active')
-                }, 175);
+                    document.getElementById('Wheel').classList.remove('Up')
+                }, 400);
             }
 
         });

@@ -13,67 +13,45 @@
 
 /****Navbar****/
 
-.navbar {
+.navBar {
     position: absolute;
     left: 50%;
     top: 5%;
     transform: translate(-50%, -50%);
-}
-
-.navbarButton1 {
-    display: inline-block;
-    margin: 1em;
-}
-
-.navbarButton2 {
-    display: inline-block;
-    margin: 1em;
-}
-
-.navbarButton3 {
-    display: inline-block;
-    margin: 1em;
-}
-
-.navbarButton4 {
-    display: inline-block;
-    margin: 1em;
-}
-
-.navbar a {
-    display: inline-block;
-    letter-spacing: 1px;
     text-align: center;
+}
+
+.navBar a {
+    letter-spacing: 1px;
     text-decoration: none;
     font-size: 1.3em;
 }
 
-.navbar a:hover {
+.navBarText {
+    padding-top: 1em;
+    font-size: 1.05em;
+}
+.navBar a:hover {
     font-weight: bold;
 }
-
 
 /****WheelCheckArea****/
 
 .WheelCheckArea {
-    text-align: center;
+    padding-right: 21em;
+    padding-left: 21em;
     position: absolute;
-    padding: 17em;
-    padding-left: 36em;
-    padding-right: 36em;
     left: 50%;
     top: 55%;
     transform: translate(-50%, -50%);
 }
 
-#WheelUp.active {
-    transform: scale(1.1);
-    filter: saturate(18)
+#Wheel.Up {
+    content: url("components/mouseUp.png");
 }
 
-#WheelDown.active {
-    transform: scale(1.1);
-    filter: saturate(18)
+#Wheel.Down {
+    content: url("components/mouseDown.png");
 }
 
 
