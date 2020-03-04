@@ -29,7 +29,7 @@
 
 .navBarText {
     padding-top: 1em;
-    font-size: 1.05em;
+    font-size: 1.1em;
 }
 .navBar a:hover {
     font-weight: bold;
@@ -44,6 +44,12 @@
     left: 50%;
     top: 55%;
     transform: translate(-50%, -50%);
+    opacity: 85%;
+}
+
+#Wheel {
+    /*width: 100%;*/
+    content: url("components/mouse.png");
 }
 
 #Wheel.Up {
@@ -53,6 +59,21 @@
 #Wheel.Down {
     content: url("components/mouseDown.png");
 }
+
+.WheelPreload1 {
+    content: url("components/mouseUp.png");
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.WheelPreload2 {
+    content: url("components/mouseDown.png");
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
 
 
 
