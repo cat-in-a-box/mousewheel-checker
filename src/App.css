@@ -2,8 +2,6 @@
 
 /*CSS в Реакте не хочет грузить бэкграунд из public, ругается на это. Поэтому добавил в src/components, оттуда грузит нормально*/
 * {
-    margin: 0;
-    padding: 0;
     font-family: 'Josefin Sans', sans-serif;
     background-image: url(components/Background.jpg);
     background-repeat: repeat;
@@ -38,26 +36,85 @@
 /****WheelCheckArea****/
 
 .WheelCheckArea {
-    padding-right: 21em;
-    padding-left: 21em;
+    padding-right: 35em;
+    padding-left: 35em;
     position: absolute;
+    /*border-style: dotted;*/
     left: 50%;
     top: 55%;
     transform: translate(-50%, -50%);
-    opacity: 85%;
+    overflow:hidden;
 }
 
 #Wheel {
-    /*width: 100%;*/
+
     content: url("components/mouse.png");
+    /*border-style: solid;*/
+    position: relative;
+    float:left;
+    /*top: 55%;*/
+    margin: 0;
+    animation: moving 10s infinite;
+    /*-moz-animation: myship 5s; !* Firefox *!*/
+    /*-webkit-animation: myship 5s;*/
+    /*animation-timing-function: step-start;*/
+    background: transparent;
+    /*иногда появляется какой-то непонятный бордер вокруг прозрачной png. Строки снизу это фиксят*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+    zoom: 1;
 }
+@keyframes moving
+{
+    0% {left: 0; transform: rotateY(0deg)}
+    16% {transform: scale(0.9) rotateY(0deg)}
+    33.6% {left:-100%;transform: rotateY(00deg)}
+    34% {left:-100%;transform: rotateY(180deg) scale(0.95)}
+    50% {left:-55%;transform: rotateY(180deg) scale(0.7)}
+    61% {left:43%;transform: rotateY(180deg) scale(0.85)}
+    74.6% {left:100%;transform: rotateY(180deg) scale(0.7)}
+    75% {left:100%;transform: rotateY(0deg) scale(0.7)}
+    /*87% {left:72%;transform: rotateY(0deg) scale(0.9)}*/
+    100%{left:0; transform: rotateY(0deg) scale(1)}
+}
+
+
+/*@keyframes rotatingBack*/
+/*{*/
+/*    from {transform: rotateY(0deg)}*/
+/*    to  {transform: rotateY(0deg)}*/
+/*}*/
+/*@-moz-keyframes myship*/
+/*{*/
+/*    from {left: 100%;}*/
+
+/*    to{left:100%;}*/
+
+/*    49% {left: -100%;}*/
+
+/*    50% {transform: revert}*/
+/*}*/
+/*@-webkit-keyframes myship*/
+/*{*/
+/*    from {left: 100%;}*/
+
+/*    to{left:100%;}*/
+
+/*    49% {left: -100%;}*/
+
+/*    50% {transform: rotateY(180deg)}*/
+
+/*}*/
 
 #Wheel.Up {
     content: url("components/mouseUp.png");
+    /*transform: scale(1.05);*/
+    filter: none;
 }
 
 #Wheel.Down {
     content: url("components/mouseDown.png");
+    /*transform: rotateY(180deg);*/
+    filter: none;
 }
 
 .WheelPreload1 {
