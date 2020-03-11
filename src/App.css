@@ -9,10 +9,6 @@
 }
 
 .Header {
-    position: absolute;
-    left: 50%;
-    top: 5%;
-    transform: translate(-50%, -50%);
     text-align: center;
     text-decoration-line: none;
     font-size: 1.3em;
