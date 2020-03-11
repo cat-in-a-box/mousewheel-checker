@@ -8,9 +8,6 @@
     color: rgb(66, 66, 66);
 }
 
-
-/****Navbar****/
-
 .Header {
     position: absolute;
     left: 50%;
@@ -41,11 +38,11 @@
 }
 
 #Wheel {
-
     content: url("components/mouse.png");
     /*border-style: solid;*/
     position: relative;
     float:left;
+    width: 20em;
     /*top: 55%;*/
     margin: 0;
     animation: moving 10s infinite;
@@ -54,6 +51,7 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
     zoom: 1;
 }
+
 @keyframes moving
 {
     0% {left: 0; transform: rotateY(0deg)}
