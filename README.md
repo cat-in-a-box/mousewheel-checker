@@ -1,2 +1,3 @@
 # mousewheel_checker
-A simple page to check wheel rotation on my almost broken mouse. Just to understand if its working properly or not
+A react application with a purpose to check wheel rotation on my broken mouse. 
+Just to understand if its working properly or not
