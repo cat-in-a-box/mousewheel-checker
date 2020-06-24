@@ -1,6 +1,6 @@
 {
-  "name": "mousewheel_checker",
-  "homepage": "https://cat-in-a-box.github.io/mousewheel_checker",
+  "name": "mousewheel-checker",
+  "homepage": "https://cat-in-a-box.github.io/mousewheel-checker",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -37,7 +37,7 @@
   },
   "guppy": {
     "id": "41590160-0b76-11ea-9232-155000059c75",
-    "name": "mousewheel_checker",
+    "name": "mousewheel-checker",
     "type": "create-react-app",
     "color": "#C51162",
     "icon": null,
