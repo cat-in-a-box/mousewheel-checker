@@ -14,7 +14,7 @@ export default class WheelCheckRotation extends React.Component {
                 window.clearTimeout(mouseDownCooldown);
                 mouseDownCooldown = window.setTimeout(function () {
                     document.getElementById('Wheel').classList.remove('Down')
-                }, 400);
+                }, 350);
             }
 
             else if (a.deltaY < 0) {
@@ -22,7 +22,7 @@ export default class WheelCheckRotation extends React.Component {
                 window.clearTimeout(mouseUpCooldown);
                 mouseUpCooldown = window.setTimeout(function () {
                     document.getElementById('Wheel').classList.remove('Up')
-                }, 400);
+                }, 350);
             }
 
         });
