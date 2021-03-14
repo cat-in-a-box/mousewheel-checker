@@ -1,8 +1,8 @@
 import React from "react";
-import BackButton from "../BackButton.jsx";
-import WheelCheckArea from "./components/WheelCheckArea.jsx";
-import WheelCheckProcess from "./components/WheelCheckProcess.jsx";
-import WheelCheckDescription from './components/WheelCheckDescription.jsx';
+import BackButton from "../BackButton";
+import WheelCheckArea from "./components/WheelCheckArea";
+import WheelCheckProcess from "./components/WheelCheckProcess";
+import WheelCheckDescription from './components/WheelCheckDescription';
 
 const MousewheelChecker = () => {
 
